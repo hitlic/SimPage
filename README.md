@@ -11,5 +11,5 @@ A very simple JS paging tool based on Mybatis plugin of PageHelper (基于Mybati
 
 （5）CSS样式设置同 bootstrap 分页组件的样式设置一致。
 
-
+详细使用说明参见 SimPage.js
 
