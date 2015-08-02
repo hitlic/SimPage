@@ -10,12 +10,12 @@
  *	（5）例:
         <!-- JS代码 -->
         var sp=new SimPage({
-	       container:"#pagePanel",              //*1* 存放页码面板的『容器id』 
-	       url: '/ajax/url',                    //*2* ajax访问的『url』 
-	       requestNameOfPageNum:'pageNum',      //*3* 『request中的参数名』, 默认为'pageNum', 
-                                                //	  用于从request中获取PageHelper.startPage(pageNum, pageSize)的参数pageNum 
-	       requestNameOfPageSize:'pageSize',    //*4* 『request中的参数名』, 默认为'pageSize', 
-                                                //	  用于从request中获取PageHelper.startPage(pageNum, pageSize)的参数pageSize 
+	   container:"#pagePanel",              //*1* 存放页码面板的『容器id』 
+	   url: '/ajax/url',                    //*2* ajax访问的『url』 
+	   requestNameOfPageNum:'pageNum',      //*3* 『request中的参数名』, 默认为'pageNum', 
+                                        	//     用于从request中获取PageHelper.startPage(pageNum, pageSize)的参数pageNum 
+	   requestNameOfPageSize:'pageSize',    //*4* 『request中的参数名』, 默认为'pageSize', 
+                                        	//     用于从request中获取PageHelper.startPage(pageNum, pageSize)的参数pageSize 
            pageSize:10,                         //*5* 『页面大小』，默认值10
            data:{ },                            //*6* ajax访问的『其他参数』
            method:'post',                       //*7* 『请求方法』，默认为 post, 如果为 get 则上述参数也可放在url中 
@@ -34,7 +34,7 @@
         <!-- HTML代码 -->
         <div id="pagePanel"></div>
  * （6）重要函数
-       SimPage.refresh(pageNum, data)  //** 刷新页面，使用场景：页面删除、修改或添加一条记录后刷新页面
+        SimPage.refresh(pageNum, data)  //** 刷新页面，使用场景：页面删除、修改或添加一条记录后刷新页面
                                        //   pageNum为要显示的页面，默认为当前页面, data为ajax的访问数据, 含意同（5）中的 data
                                        //   该函数的两个参数在页面面要变动时使用，例：删除记录、输入检索条件进行搜索 
  * -----------------------------------------------------------------------------------------------------------------------
@@ -185,7 +185,6 @@ SimPage.prototype.createPanel=function(pageInfo){
 SimPage.prototype.refresh=function(pageNum, data){
 	if(data!=null)
 		this.setting['data']=data;
-	
 	if(pageNum==null)
 		this.createPage(this.currentPage);
 	else
