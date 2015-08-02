@@ -6,7 +6,7 @@
  * 	（1）后端使用mybatis的pagehelper插件；
  *	（2）后端使用 pagehelper 的 PageHelper.startPage(pageNum, pageSize) 方法；
  *	（3）服务器返回 paehelper的PageInfo的JSON对象；
- *  （4）CSS样式设置同 bootstrap 分页组件的样式设置一致；
+ * 	（4）CSS样式设置同 bootstrap 分页组件的样式设置一致；
  *	（5）例:
         <!-- JS代码 -->
         var sp=new SimPage({
