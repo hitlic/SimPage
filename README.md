@@ -14,7 +14,7 @@ A very simple JS paging tool based on Mybatis plugin of PageHelper (基于Mybati
 （5）例:
 
     <!-- JS代码 -->
-    var sp=$("#pagePanel") SimPage({        //*1* 存放页码面板的div
+    var sp=$("#pagePanel").SimPage({        //*1* 存放页码面板的div
        url: '/ajax/route/route_routePage',  //*2* ajax访问的『url』 
        requestNameOfPageNum:'pageNum',      //*3* 『request中的参数名』, 默认为'pageNum', 
                                             //	  用于从request中获取PageHelper.startPage(pageNum, pageSize)的参数pageNum 
