@@ -9,7 +9,7 @@
  *  	（4）CSS样式设置同 bootstrap 分页组件的样式设置一致；
  *	（5）例:
         <!-- JS代码 -->
-        var sp=$("#pagePanel") SimPage({
+        var sp=$("#pagePanel").SimPage({
 	       url: '/ajax/route/route_routePage',  //*2* ajax访问的『url』 
 	       requestNameOfPageNum:'pageNum',      //*3* 『request中的参数名』, 默认为'pageNum', 
                                                 //	  用于从request中获取PageHelper.startPage(pageNum, pageSize)的参数pageNum 
